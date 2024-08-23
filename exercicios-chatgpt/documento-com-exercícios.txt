@@ -1,0 +1,25 @@
+Exercício com: 
+
+	PRIMEIROS PASSOS
+
+ 	2 de cada: 
+		window.alert()
+		window.confirm()
+		window.prompt()
+
+	MANIPULAÇÃO DE DADOS
+
+	3 de cada:
+		parseInt()
+		parseFloat()
+		Number.
+		String(n) ou n.toString()
+		.length
+		.toUpperCase()
+		.toLowerCase()
+		document.write()
+		.toFixed()
+		.replace()
+
+		
+		

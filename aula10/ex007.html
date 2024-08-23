@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+    
+    body {
+        background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #div1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        background-color: aliceblue;
+        border: 3px solid black;
+        border-radius: 20px;
+    }
+
+    input {
+        margin: 10px 0px;
+    }
+
+    #res {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 20px ;
+        margin-top: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Somando Valores</h1>    
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+
+    </div>
+
+    <div id="res"> Resultado </div>
+
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma enre ${n1} e ${n2} é igual a <br><strong>${s}curs</strong>`
+        }
+    </script>
+</body>
+</html>
