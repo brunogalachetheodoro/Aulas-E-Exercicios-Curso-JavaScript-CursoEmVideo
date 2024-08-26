@@ -1,0 +1,58 @@
+<!--
+
+Adicione um evento de clique a um botão com o ID "alertButton" que exiba um alerta com a mensagem "Botão clicado!" quando o botão for clicado.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão alerta</title>
+    <style>
+
+        body {
+            background-color: lightskyblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+
+        input {
+            margin-bottom: 20px ;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="secao">
+        <input id="alertButton" type="button" value="Clique Aqui" onclick="clique()">
+    </section>
+</body>
+
+<script>
+    var botao = document.getElementById('alertButton')
+
+    function clique () {
+        window.alert('Botão Clicado!')
+    }
+</script>
+</html>

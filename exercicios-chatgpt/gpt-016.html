@@ -1,0 +1,58 @@
+<!--
+
+Selecione todos os elementos <p> na página e altere o conteúdo HTML deles para "Texto alterado" utilizando a propriedade correspondente.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Texto</title>
+    <style>
+
+        body {
+            background-color: lightskyblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+
+        input {
+            margin-bottom: 20px ;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="secao">
+        <p>Texto 1</p>
+        <p>Texto 2</p>
+        <p>Texto 3</p>
+    </section>
+</body>
+
+<script>
+    var texto = document.getElementsByTagName('p')
+
+    texto.innerText = 'Texto alterado'
+</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item clicado</title>
+    <style>
+
+        body {
+            background-color: lightseagreen;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+
+        input {
+            margin-bottom: 20px ;
+        }
+
+        .item {
+            background-color: antiquewhite;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="secao">
+        <div class="item" onclick="clique()">Clique Aqui</div>
+        <div class="item" onclick="clique()">Clique Aqui</div>
+        <div class="item" onclick="clique()">Clique Aqui</div>
+    </section>
+</body>
+</html>
+
+<script>
+    var itens = document.querySelector('div.item')
+
+    function clique() {
+
+        itens.innerText = 'Clicou'
+    }
+
+</script>
