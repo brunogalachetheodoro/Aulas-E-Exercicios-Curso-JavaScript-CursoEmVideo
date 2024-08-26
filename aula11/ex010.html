@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade Máxima</title>
+    <style>
+
+        body {
+            background: url(https://www.diariodoaco.com.br/images/noticias/55561/ZEmR0CHAMADA_radar_1024x746.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            border-radius: 10px;
+            color: white;
+        }
+
+        input {
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .secao {
+            background-color: rgba(0, 0, 0, 0.534);
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section class="secao">
+        <p>Digite sua Velocidade:</p>
+        <input type="number" name="velocidade" id="velocidade" placeholder="Sua Velocidade">
+        <input type="button" value="Enviar" onclick="enviar()">
+    </section>
+
+    <script>
+        function enviar() {
+            let vel = document.getElementById('velocidade').value
+
+            if (vel > 60) {
+                window.alert('Sua velocidade está acima do permitido. Multado!')
+            } else {
+                window.alert ('Sua velocidade está dentro do permitido. Boa viagem!')
+            }
+        }
+    </script>
+</body>
+</html>

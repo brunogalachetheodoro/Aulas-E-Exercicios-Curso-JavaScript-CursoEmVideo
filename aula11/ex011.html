@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro?</title>
+    <style>
+        
+        body {
+            background: url(https://www.infoescola.com/wp-content/uploads/2008/04/planeta-terra_585359906.jpg) no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            border-radius: 10px;
+            color: white;
+        }
+
+        input {
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .secao {
+            background-color: rgba(255, 255, 255, 0.562);
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+
+        #botao {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class="secao">
+        <h2>Qual o seu país?</h2>
+        <input type="text" name="txtpais" id="txtpais" placeholder="Digite seu país">
+        <input id="botao" type="button" value="ENVIAR" onclick="enviar()">
+        <div id="res"></div>
+    </section>
+</body>
+    <script>
+    function enviar() {
+        var pais = document.getElementById('txtpais').value
+
+        if (pais == 'Brasil' || pais == 'brasil') {
+            res.innerHTML = 'Você é Brasileiro!'
+        } else {
+            res.innerHTML = 'Você é estrangeiro!'
+        }
+    }
+
+    </script>
+</html>
