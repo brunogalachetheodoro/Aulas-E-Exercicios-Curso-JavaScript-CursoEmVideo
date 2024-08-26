@@ -1,0 +1,66 @@
+<!--
+
+Solicite ao usuário que insira dois números decimais e exiba a soma deles.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dois Números</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="secao">
+        <h1>Insira dois <br>números decimais</h1>
+        <input type="number" name="num1" id="num1"> +
+        <input type="number" name="num2" id="num2">
+        <input type="button" value="Somar" onclick="somar()">
+
+        <div id="res"></div>
+    </section>
+
+    <script>
+        function somar() {
+            var n1 = parseFloat(num1.value)
+            var n2 = parseFloat(num2.value)
+
+            var s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} + ${n2} é igual a ${s}`
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- 
+
+ Pergunte ao usuário sua idade e exiba uma mensagem diferente dependendo se ele for maior ou menor de 18 anos.  
+ 
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Idade</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Seja Bem-Vindo</h1>
+
+    <script>
+        var idade = window.prompt ('Qual a sua idade?')
+
+        if (idade < 18) {
+            window.alert('Você ainda é menor de idade!');
+        } else if (idade > 120) {
+            window.alert('A idade digitada provavelmente está errada!');
+        }
+        else {
+            window.alert('Você já é maior de idade');
+        }
+    </script>
+</body>
+</html>

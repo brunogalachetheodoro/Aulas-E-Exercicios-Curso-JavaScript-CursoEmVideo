@@ -1,0 +1,65 @@
+<!--
+
+Peça ao usuário que insira um número e exiba esse número formatado como uma string
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type of</title>
+
+    <style>
+
+        body {
+            background-color: lightcyan;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 350px;
+            width: 300px;
+        }
+
+        input {
+            margin-bottom: 20px ;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="secao">
+        <h2>Digite um número</h2>
+        <input type="number" name="numero" id="numero">
+        
+        <input type="button" value="Enviar" onclick="enviar()">
+
+        <div id="res"></div>
+    </section>
+
+    <script>
+        function enviar() {
+            var num = document.getElementById('numero').value
+            var numString = String(num)
+
+            res.innerHTML = (`A variável ${numString} agora é do tipo ${typeof numString}`)
+        }
+    </script>
+</body>
+</html>

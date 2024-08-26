@@ -1,0 +1,64 @@
+<!-- 
+
+Solicite ao usuário que insira um número com várias casas decimais e exiba esse número com apenas duas casas decimais.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas Decimais</title>
+</head>
+<body>
+    
+    <style>
+
+        body {
+            background-color: lightsalmon;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+    </style>
+
+</body>
+
+    <section class="secao">
+        <h2>Insira um número com várias casas decimais</h2>
+        <input type="number" name="numero" id="numero">
+        <input type="button" value="Enviar" onclick="enviar()">
+
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        function enviar () {
+        
+        var num = parseFloat(numero.value)
+        var numeroDuasCasas = num.toFixed(2)
+
+        res.innerHTML = (`Seu número resumido é esse: ${numeroDuasCasas}`)
+        }
+
+    </script>
+</html>

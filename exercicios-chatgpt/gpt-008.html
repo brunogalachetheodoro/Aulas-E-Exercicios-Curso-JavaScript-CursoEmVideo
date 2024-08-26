@@ -1,0 +1,63 @@
+<!--
+
+Crie um script que peça ao usuário que insira uma palavra e, em seguida, exiba essa palavra em letras maiúsculas.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiúsculas</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <section class="secao">
+        <h2>Insira Qualquer Palavra</h2>
+        <input type="text" name="palavra" id="palavra">
+        <input type="button" value="Enviar" onclick="enviar()">
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        function enviar () {
+            var palavra = document.getElementById('palavra').value
+            var palMaiuscula = palavra.toUpperCase()
+
+            res.innerHTML = (`Aqui está sua palavra em letras maiúsculas: ${palMaiuscula}`)
+            
+        }
+    </script>
+</body>
+</html>

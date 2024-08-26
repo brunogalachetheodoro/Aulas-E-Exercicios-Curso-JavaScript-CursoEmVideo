@@ -1,0 +1,62 @@
+<!--
+
+Peça ao usuário para inserir uma frase e exiba essa frase toda em letras minúsculas.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minúsculas</title>
+
+    <style>
+
+        body {
+            background-color: lightskyblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="secao">
+        <h2>Digite uma frase</h2>
+        <input type="text" name="frase" id="frase">
+        <input type="button" value="Enviar" onclick="Enviar()">
+
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        function Enviar() {
+            var frase = document.getElementById('frase').value
+            var fraseMinusc = frase.toLowerCase()
+
+            res.innerHTML = (`Sua frase com letras minúsculas fica assim: <br> ${fraseMinusc}`)
+
+        }
+    </script>
+</body>
+</html>

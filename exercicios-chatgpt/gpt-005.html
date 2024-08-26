@@ -1,0 +1,60 @@
+<!--
+
+Crie um script que peça ao usuário um número e exiba o dobro desse número. Garanta que o número seja inteiro.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobro do Número</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="secao">
+        <h2>Digite um número</h2>
+        <input type="number" name="num" id="num">
+        <input type="button" value="Enviar" onclick="enviar()">
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        function enviar() {
+            var N = parseInt(num.value)
+            var mult = N*2
+
+            res.innerHTML = `O dobro de ${N} é igual a ${mult}!`
+        }
+
+    </script>
+</body>
+</html>

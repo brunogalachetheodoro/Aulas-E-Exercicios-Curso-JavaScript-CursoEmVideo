@@ -1,0 +1,62 @@
+<!--
+
+Solicite ao usuário que insira seu nome completo e exiba a quantidade de caracteres que o nome possui.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Completo</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .secao {
+            background-color: white;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 300px;
+        }
+
+        input {
+            margin: 10px 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <section class="secao">
+        <h2>Digite seu nome completo</h2>
+        <input type="text" name="nomeCompleto" id="nomeCompleto">
+        <input type="button" value="Enviar" onclick="enviar()">
+
+        <div id="res"></div>
+    </section>
+
+    <script>
+
+        function enviar() {
+            var nome = document.getElementById('nomeCompleto').value
+            var nomeLetras = nome.replace(/\s/g, "").length
+
+            res.innerHTML = `Seu nome completo possui ${nomeLetras} letras.`
+        }
+    </script>
+</body>
+</html>
