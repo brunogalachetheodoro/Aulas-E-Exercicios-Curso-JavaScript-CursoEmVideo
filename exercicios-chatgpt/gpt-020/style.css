@@ -1,0 +1,29 @@
+
+body {
+    background-color: lightskyblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.secao {
+    background-color: white;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    height: 380px;
+    width: 300px;
+}
+
+input {
+    margin-bottom: 20px ;
+}

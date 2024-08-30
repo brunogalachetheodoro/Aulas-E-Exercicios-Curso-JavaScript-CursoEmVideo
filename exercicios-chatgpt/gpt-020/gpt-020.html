@@ -1,0 +1,28 @@
+<!--
+
+Peça ao usuário que insira um mês em formato numérico (1 para janeiro, 2 para fevereiro, etc.). Exiba o nome do mês correspondente. Use uma estrutura adequada para verificar cada caso.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mês</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="secao">
+        <h1>Insira o mês</h1>
+        <p>[Janeiro = 1] | [Fevereiro = 2] | [Março = 3] <br> <br><strong>[Abril = 4] | [Maio = 5] | [Junho = 6]</strong> <br> <br> [Julho = 7] | [Agosto = 8] | [Setembro = 9] <br><br> <strong>[Outrubro = 10] | [Novembro = 11]</strong> <br><br> [Dezembro = 12]  </p>
+
+        <input type="number" name="nMes" id="nMes">
+        <input type="button" value="Enviar" onclick="enviar()">
+
+        <div id="res"></div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>

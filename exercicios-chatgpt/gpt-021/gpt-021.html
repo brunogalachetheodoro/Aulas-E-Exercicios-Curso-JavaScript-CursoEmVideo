@@ -1,0 +1,33 @@
+<!--
+
+Crie um script que pergunte ao usuário o clima atual (ensolarado, chuvoso, nublado) e exiba uma mensagem sugerindo uma atividade (por exemplo, "Vá para a praia" para ensolarado). Use a estrutura apropriada para lidar com múltiplas condições.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Hoje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="secao">
+        <h1>Clima Hoje</h1>
+        <div>
+        
+            <input type="radio" name="clima" id="sol" value="sol" checked> <label for="sol">Sol</label>
+            
+            <input type="radio" name="clima" id="chuva" value="chuva"> <label for="chuva">Chuva</label>
+
+            <input type="radio" name="clima" id="nublado" value="nublado"> <label for="nublado"> Nublado </label>
+        </div>
+
+        <input type="button" value="ENVIAR" onclick="enviar()">
+        <div id="res"></div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
