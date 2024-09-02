@@ -8,12 +8,20 @@
 </head>
 <body>
     <header> 
-        <h1>Título</h1> 
+        <h1>Tabuada</h1> 
     </header>
 
     <section class="secao">
-        <div></div>
-        <div></div>
+        <div class="div1">
+            <p>Número:</p>
+            <input type="number" name="numero" id="numero">
+            <input type="button" value="Gerar Tabuada" onclick="gerar()">
+        </div>
+        <div id="res">
+            <select name="tabuada" id="seltab" size="10">
+                <option> Digite um número acima</option>
+            </select>
+        </div>
     </section>
 
     <footer>
