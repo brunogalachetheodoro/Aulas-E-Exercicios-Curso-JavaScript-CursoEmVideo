@@ -28,11 +28,15 @@ body {
 }
 
 input {
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
 
 select {
     width: 150px;
     margin-left: 20px;
+}
+
+#res {
+    padding-left: 20px;
 }
 
